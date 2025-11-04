@@ -1,21 +1,20 @@
-
-
 public class Main {
     public static void main(String[] args) {
 
-    Domov domNovakovcov = new Domov();
-        domNovakovcov.pocetOkien = 12;
-        domNovakovcov.pocetPoschodi = 3;
-        domNovakovcov.rozloha = 42.5f;
+    Domov domNovak =  new Domov(536f, 10, 3);
+    Domov domZajac = new Domov(423f, 8, 2);
+    Domov domKralik = new Domov(356f, 6, 4);
 
-    Domov domZajacov = new Domov();
-    domZajacov.pocetOkien = 24;
-    domZajacov.pocetPoschodi = 2;
-    domZajacov.rozloha = 853.6f;
+    float cenaDomNovak = domNovak.vypocetCenaDomov(1,"Novak");
+    float cenaDomZajac = domZajac.vypocetCenaDomov(3,"Zajac");
+    float cenaDomKralik = domKralik.vypocetCenaDomov(2,"Kralik");
 
-    domNovakovcov.vypocetCenyDomov();
-    domZajacov.vypocetCenyDomov();
-    System.out.println(domZajacov.rozloha + domNovakovcov.rozloha);
+    System.out.println(domZajac.rozloha + domNovak.rozloha);
+
+ /*   Random nahGen = new Random();
+    nahGen.nextInt();
+*/
+
     }
 }
 
